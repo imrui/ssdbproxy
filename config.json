@@ -1,0 +1,43 @@
+{
+	"host":"0.0.0.0",
+	"port":8888,
+	"reloadSecond":60,
+	"args":{
+		"getClientTimeout":5,
+		"maxPoolSize":50,
+		"minPoolSize":5,
+		"acquireIncrement":5,
+		"maxIdleTime":120,
+		"maxWaitSize":1200,
+		"healthSecond":300
+	},
+	"master": {
+		"id":"Default",
+		"route":"",
+		"host":"192.168.1.20",
+		"port":8888,
+		"password":"",
+		"open":true,
+		"ownArgs":false
+	},
+	"nodes":[
+		{
+			"id":"Test1",
+			"route":"t1",
+			"host":"192.168.1.20",
+			"port":8876,
+			"password":"",
+			"open":true,
+			"ownArgs":false
+		},
+		{
+			"id":"Test2",
+			"route":"t2",
+			"host":"192.168.1.20",
+			"port":8877,
+			"password":"",
+			"open":true,
+			"ownArgs":false
+		}
+	]
+}
